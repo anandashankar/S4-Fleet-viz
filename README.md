@@ -1,2 +1,3 @@
 # S4-Fleet-viz-
-visualization plan 
+Factory visualization plan. Implementing socket.io and node.js with passport.js authentication
+for an express4 middleware. 

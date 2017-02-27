@@ -1,0 +1,129 @@
+html
+  head
+    title Fastem Visualization
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  body
+    div(style='margin:100px;')
+      nav.navbar.navbar-inverse.navbar-static-top
+        .container
+          a.navbar-brand(href='http://www.tut.fi/en/research/research-projects/index.htm') Tampere University of Technology
+          ul.nav.navbar-nav
+            li.active
+              a(href='/viz') Home
+            li
+              a(href='/#') Flowtag description
+            li
+              a(href='/data') Data Table
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/logout')
+                span.glyphicon.glyphicon-log-out
+                |  Logout
+      .jumbotron(style='padding:40px;')
+        h1 Fastems Case
+        p Flow Tag location data visualization in Fastems Factory Floor
+        p
+          a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
+      .jumbotron(style='padding: 100px; padding-left: 300px;')
+        svg(xmlns='http://www.w3.org/2000/svg', width='1000px', height='700px')
+          // Floorplan
+          // Heat Treatment Area
+          path(d='M400 10 h 500 v 250 h -500 Z', fill='transparent', stroke='black')
+            title Heat Treatment Area
+          path(d='M550 40 h 200 v 100 h -200 Z', fill='transparent', stroke='black')
+          path(d='M760 125 h 125 v 80 h -125 Z', fill='transparent', stroke='black')
+          // Lämpökäsittely, ulko-ovi
+          path(d='M410 155 h 175 v 80 h -175 Z', fill='transparent', stroke='black')
+          text(x='415', y='200', font-family='sans-serif', font-size='16px', fill='black') Lämpökäsittely, ulko-ovi
+          // Main Machining area
+          path(d='M50 260 h 900 v 250 h -900 Z', fill='transparent', stroke='black')
+            title Machining Area
+          // Vastaanotto
+          path(d='M100 300 h 175 v 80 h -175 Z', fill='transparent', stroke='black')
+          text(x='150', y='350', font-family='sans-serif', font-size='16px', fill='black') Vastaanotto
+          // CC
+          path(d='M430 280 h 400 v 50 h -400 Z', fill='transparent', stroke='black')
+          path(d='M400 290 h 30 v 20 h -30 Z', fill='transparent', stroke='black')
+          text(x='405', y='305', font-family='sans-serif', font-size='14px', fill='black') CC
+          // LS1
+          path(d='M435 330 h 30 v 50 h -30 Z', fill='transparent', stroke='black')
+            title Fastems Lastausasemat
+          text(x='438', y='360', font-family='sans-serif', font-size='14px', fill='black') LS1
+          // LS 2
+          path(d='M465 330 h 30 v 50 h -30 Z', fill='transparent', stroke='black')
+            title Fastems Lastausasemat
+          text(x='468', y='360', font-family='sans-serif', font-size='14px', fill='black') LS2
+          // MC1
+          path(d='M520 330 h 50 v 60 h -50 Z', fill='transparent', stroke='black')
+          text(x='525', y='360', font-family='sans-serif', font-size='14px', fill='black') MC1
+          // MC2
+          path(d='M600 330 h 50 v 60 h -50 Z', fill='transparent', stroke='black')
+          text(x='605', y='360', font-family='sans-serif', font-size='14px', fill='black') MC2
+          // SC
+          path(d='M730 310 h 30 v 20 h -30 Z', fill='transparent', stroke='black')
+          text(x='733', y='325', font-family='sans-serif', font-size='14px', fill='black') SC
+          // Ovi 6
+          path(d='M900 260 h 50 v 20 h -50 Z', fill='transparent', stroke='black')
+          text(x='905', y='275', font-family='sans-serif', font-size='14px', fill='black') Ovi 6
+          // Mittapiste (Gleason 466)
+          path(d='M530 430 h 50 v 50 h -50 Z', fill='transparent', stroke='black')
+            title Mittapiste (Gleason 466)
+          text(x='535', y='460', font-family='sans-serif', font-size='14px', fill='black') G 466
+          // Okuma 450
+          path(d='M600 455 h 120 v 30 h -120 Z', fill='transparent', stroke='black')
+            title Okuma 450
+          text(x='625', y='475', font-family='sans-serif', font-size='14px', fill='black') Okuma 450
+          // Okuma 455
+          path(d='M740 455 h 120 v 30 h -120 Z', fill='transparent', stroke='black')
+            title Okuma 455
+          text(x='755', y='475', font-family='sans-serif', font-size='14px', fill='black') Okuma 455
+          // Okuma, Lisä
+          path(d='M870 420 h 50 v 50 h -50 Z', fill='transparent', stroke='black')
+            title Okuma, Lisä 
+          text(x='880', y='450', font-family='sans-serif', font-size='14px', fill='black') Lisä
+          // Okuma, takakäytävä
+          path(d='M600 495 h 260 v 15 h -260 Z', fill='transparent', stroke='black')
+            title Okuma, takakäytävä
+          text(x='670', y='505', font-family='sans-serif', font-size='12px', fill='black') Okuma, takakäytävä
+          // Atala
+          path(d='M10 10 h 100 v 100 h -100 Z', fill='transparent', stroke='black')
+          text(x='30', y='60', font-family='sans-serif', font-size='16px', fill='black') Atala
+          // Lähettämö
+          path(d='M200 55 h 100 v 100 h -100 Z', fill='transparent', stroke='black')
+          text(x='210', y='100', font-family='sans-serif', font-size='16px', fill='black') Lähettämö
+          // Flow Tags
+          path(d='M10 140 h 120 v 50 h -120 Z', fill='transparent', stroke='black')
+            title FlowTag Box
+          circle#ft1(cx='20', cy='150', r='10', fill='red')
+            title FT1
+          animatemotion(xlink:href='#ft1', dur='9s', begin='click', fill='freeze', path='M0,0 h150 v220, h180 v40, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -60 Z')
+          circle#ft2(cx='40', cy='150', r='10', fill='green')
+            title FT2
+          animatemotion(xlink:href='#ft2', dur='9s', begin='click', fill='freeze', path='M0,0 h135 v220, h180 v40, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -60 Z')
+          circle#ft3(cx='60', cy='150', r='10', fill='blue')
+            title FT3
+          animatemotion(xlink:href='#ft3', dur='12s', begin='click', fill='freeze', path='M0,0 h120 v220, h180 v40, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -60 Z')
+          circle#ft4(cx='80', cy='150', r='10', fill='yellow')
+            title FT4
+          animatemotion(xlink:href='#ft4', dur='15s', begin='click', fill='freeze', path='M0,0 h100 v220, h180 v40, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -60 Z')
+          circle#ft5(cx='100', cy='150', r='10', fill='darkslateblue')
+            title FT5
+          animatemotion(xlink:href='#ft5', dur='10s', begin='click', fill='freeze', path='M0,0 h85 v220, h180 v40, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -60 Z')
+          circle#ft6(cx='20', cy='170', r='10', fill='hotpink')
+            title FT6
+          animatemotion(xlink:href='#ft6', dur='3s', begin='click', fill='freeze', path='M0,0 h150 v200, h180 v30, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -40 Z')
+          circle#ft7(cx='40', cy='170', r='10', fill='mediumvioletred')
+            title FT7
+          animatemotion(xlink:href='#ft7', dur='15s', begin='click', fill='freeze', path='M0,0 h135 v200, h180 v30, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -40 Z')
+          circle#ft8(cx='60', cy='170', r='10', fill='slategrey')
+            title FT8
+          animatemotion(xlink:href='#ft8', dur='25s', begin='click', fill='freeze', path='M0,0 h120 v200, h180 v30, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -40 Z')
+          circle#ft9(cx='80', cy='170', r='10', fill='orange')
+            title FT9
+          animatemotion(xlink:href='#ft9', dur='3s', begin='click', fill='freeze', path='M0,0 h100 v200, h180 v30, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -40 Z')
+          circle#ft10(cx='100', cy='170', r='10', fill='black')
+            title FT10
+          animatemotion(xlink:href='#ft10', dur='20s', begin='click', fill='freeze', path='M0,0 h85 v200, h180 v30, h265 v60, v -40, h 150, v 40, v -30, h 120, v -140, h -25, v -120, h -150, v -60, v 60 h -200, v -40 Z')
