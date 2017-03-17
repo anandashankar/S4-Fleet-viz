@@ -1,6 +1,6 @@
 html
   head
-    title Fastem Visualization
+    title Fastems Visualization
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
@@ -14,9 +14,13 @@ html
             li.active
               a(href='/viz') Home
             li
-              a(href='/#') Flowtag description
+              a(href='/flowtags') Flowtag description
             li
               a(href='/data') Data Table
+            li
+              a(href='/subsystem') Sub System description
+            li
+              a(href='/subsys') Sub System
           ul.nav.navbar-nav.navbar-right
             li
               a(href='/logout')
@@ -24,9 +28,9 @@ html
                 |  Logout
       .jumbotron(style='padding:40px;')
         h1 Fastems Case
-        p Flow Tag location data visualization in Fastems Factory Floor
+        p Flow Tag data visualization
         p
-          a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
+          a.btn.btn-primary.btn-lg(href='https://www.fastems.com/', role='button') Learn more
       .jumbotron(style='padding: 100px; padding-left: 300px;')
         svg(xmlns='http://www.w3.org/2000/svg', width='1000px', height='700px')
           // Floorplan
