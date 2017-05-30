@@ -1,0 +1,14 @@
+
+
+lines 105-145: setting up dictionaries
+
+line 154: set the time step, the pause, between iterations of the while-loop
+line 170: set the Start Time for the flow tag movement history, the history data is searched for from this time onwards
+
+lines 178-211: get the data from the clouds and save it to the dictionaries
+
+line 215: make one dictionary that contains as sub-dictionaries the required data
+line 217-219: convert this transfer dictionary as a json in bytes form
+
+line 222: open a socket to localhost
+line 225: send the json over the socket
