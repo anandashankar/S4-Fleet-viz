@@ -1,11 +1,11 @@
 {
-  "name": "Python",
+  "name": "fastems-viz",
   "version": "0.0.1",
   "description": "App",
   "dependencies": {
     "chart.js": "^2.5.0",
-    "express": "^4.11.1",
+    "express": "^4.15.4",
     "socket.io": "latest"
-  },
-  "author": "Ananda"
+ },
+  "author": "ananda"
 }

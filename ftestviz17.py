@@ -22,7 +22,7 @@ from datetime import datetime
 #+++++++++++++++++++A Function for getting stuff from the Fastems Thingworx mobile api
 def get_fastems_api_data(apiEndpoint):
     baseurl = 'https://fastems-sandbox.cloud.thingworx.com/Thingworx/Things/MobileApi_v2/services/'
-    appKey = 'APIkey here'
+    appKey = '623064f6-a306-4cc5-87e6-2c6689dc9e9c'
     headers = {'appKey': appKey,'Accept': 'application/json'}
     payload = {}
     try: 
@@ -48,8 +48,8 @@ def get_tag_data(FlowTagNumber = "1176", StartTime = "2016-11-01T08:00:00", EndT
     #+++++++++++++++++++PASSWORD MANAGER from https://docs.python.org/3.1/howto/urllib2.html
     # create a password manager
     top_level_url = address #"https://api.trelab.fi"
-    username = 'username'
-    password = 'password'
+    username = 'fastems-api-tty'
+    password = 'j2f5Uk9LC4c'
 
     password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
 
@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
     apiEndpoint2 = 'GetSystemsStatuses'
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.connect(("127.0.0.1.",1337)) #open a socket    
+    sock.connect(("127.0.0.1", 8080)) #open a socket    
 
     sleep_time = 10 #define the pause between runs (seconds)
     counter = 0
@@ -220,7 +220,7 @@ if __name__ == "__main__":
           
         
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.connect(("127.0.0.1.",1337)) #open a socket            
+        sock.connect(("127.0.0.1", 8080)) #open a socket            
         
         sock.send(msg) #send the message on running the model
         print("sent", counter)

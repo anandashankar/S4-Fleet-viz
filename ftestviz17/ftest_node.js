@@ -3,8 +3,9 @@
 
 var express = require('express');
 var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var server = app.listen(3000);
+//var http = require('http').Server(app);
+var io = require('socket.io').listen(server);
 //var serv = require('http').Server(app);
 //var io = require('socket.io')(serv);
 var objectAssign = require('object-assign');
@@ -14,15 +15,16 @@ var net = require('net');
 //var listener = io.listen(serv);
 //var client = new net.Socket();
 
+console.log('TUT cloud listening on port: 3000');
 //START THE SERVER
-http.listen(2000, function(){
-  console.log('listening on *:2000');
-});
+/*http.listen(2000, function(){
+  console.log('TUT cloud listening on port: 2000');
+});*/
 /*serv.listen(5000, function(){
     console.log("Server started and operational");
 });
 */
-//LOAD THE WEBSITE
+//GET APP ROUTE
 app.get('/',function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
@@ -79,9 +81,9 @@ net.createServer(function(sock) {
 	io.emit('pydata', pydata2);
 	console.log("Sent pydata straight to b4w! ");
 	
-}).listen(1337, '127.0.0.1.');
+}).listen(8080, "127.0.0.1");
 
-console.log('Server listening on ' + '127.0.0.1.' +':'+ '1337');
+console.log('Server listening on ' + "127.0.0.1" +':'+ '8080');
 
 
 //OPEN A SOCKET TO COMMUNICATE WITH THE VISUALIZATION SCRIPT

@@ -27,7 +27,7 @@ var alert2 = "warning";
 var alert3 = "error";
 var alert4 = ""; 
 
-var socket = io('http://localhost:2000');
+var socket = io();
     socket.on('pydata', function(pydata){        
 
 var parsedObj = pydata; 
