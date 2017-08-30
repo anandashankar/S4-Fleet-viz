@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>F-visualizer main</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+
+<link rel="stylesheet" href="fteststyle.css" type="text/css" />
+
+             <!--  socket.io client library -->
+<script src="/socket.io/socket.io.js"></script>
+             <!--  Blend4web engine -->  
+<script type="text/javascript" src="b4w.min.js"></script>
+			 <!-- JQUERY -->
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+             <!--  Your code -->
+<script type="text/javascript" src="ftest_b4w_v2.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.tut.fi/en/home">Tampere University of Technology</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">Vizualization</a></li>
+      <li><a href="/data">Data</a></li>
+      <li><a href="/link">LTP</a></li>
+      <li><a href="/logout">logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+	<div id="main_canvas_container"></div>
+	
+	<div id="fms_cc_anchor">FMS Cell Controller
+		<div id="fms_cc_anchor_child"> Sir...
+		</div>
+	</div>
+	
+	<div id="fms_sc_anchor">FMS Stacker Crane
+		<div id="fms_sc_anchor_child"> Can you dig it?
+		</div>
+	</div>
+	
+	<div id="fms_mc1_anchor">FMS Machine Cell 1
+		<div id="fms_mc1_anchor_child"> Sometimes you gotta run before you can walk.
+		</div>
+	</div>
+	
+	<div id="fms_mc2_anchor">FMS Machine Cell 2
+		<div id="fms_mc2_anchor_child"> Driving with the top down
+		</div>
+	</div>
+	
+	<div id="fms_ls1_anchor">FMS Loading Station 1
+		<div id="fms_ls1_anchor_child"> Tank missile!
+		</div>
+	</div>
+		
+	<div id="fms_ls2_anchor">FMS Loading Station 2
+		<div id="fms_ls2_anchor_child"> Mark II
+		</div>
+	</div>
+
+	
+</body>
+</html>

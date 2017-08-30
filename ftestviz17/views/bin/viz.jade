@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    title F-visualizer main
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no, width=device-width')
+    link(rel='stylesheet', href='fteststyle.css', type='text/css')
+    // socket.io client library
+    script(src='/socket.io/socket.io.js')
+    // Blend4web engine
+    script(type='text/javascript', src='b4w.min.js')
+    // JQUERY
+    script(type='text/javascript', src='jquery-1.11.1.min.js')
+    // Your code
+    script(type='text/javascript', src='ftest_b4w_v2.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='http://www.tut.fi/en/home') Tampere University of Technology
+        ul.nav.navbar-nav
+          li.active
+            a(href='') Vizualization
+          li
+            a(href='/data') Data
+          li
+            a(href='/link') LTP
+          li
+            a(href='/logout') logout
+        
+    #main_canvas_container
+    #fms_cc_anchor
+      | FMS Cell Controller
+      #fms_cc_anchor_child
+        | Sir...
+    #fms_sc_anchor
+      | FMS Stacker Crane
+      #fms_sc_anchor_child
+        | Can you dig it?
+    #fms_mc1_anchor
+      | FMS Machine Cell 1
+      #fms_mc1_anchor_child
+        | Sometimes you gotta run before you can walk.
+    #fms_mc2_anchor
+      | FMS Machine Cell 2
+      #fms_mc2_anchor_child
+        | Driving with the top down
+    #fms_ls1_anchor
+      | FMS Loading Station 1
+      #fms_ls1_anchor_child
+        | Tank missile!
+    #fms_ls2_anchor
+      | FMS Loading Station 2
+      #fms_ls2_anchor_child
+        | Mark II
+
+  
+  
+  
+  
+  

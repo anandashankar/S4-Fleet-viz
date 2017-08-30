@@ -1,5 +1,6 @@
 {
   "name": "fastems-viz",
+  "author": "ananda",
   "version": "0.0.1",
   "description": "App",
   "dependencies": {
@@ -7,5 +8,28 @@
     "express": "^4.15.4",
     "socket.io": "latest"
  },
-  "author": "ananda"
+ "repository": {
+    "type": "git",
+    "url": "git@github.com:ananda.shankar/S4-Fleet-viz.git"
+  },
+  "license": "MIT",
+  "dependencies": {    
+    "connect-flash": "^0.1.1",    
+    "express": "^4.11.1",
+    "express-session": "^1.10.1",   
+    "mongoose": "latest",   
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-local-mongoose": "latest",
+    "serve-favicon": "^2.2.0",
+    "jade": "^1.9.1",
+    "morgan": "^1.5.1",
+    "body-parser": "^1.10.2",
+    "chai": "~1.8.1",
+    "cookie-parser": "^1.3.3",
+    "debug": "^2.1.1",
+    "mocha": "~1.14.0",
+    "should": "~2.1.0"
+
+  }
 }

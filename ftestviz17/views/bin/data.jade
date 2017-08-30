@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title F-visualizer data
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1.0, user-scalable=no, width=device-width')
+    link(rel='stylesheet', href='fteststyle.css', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='http://www.tut.fi/en/home') Tampere University of Technology
+        ul.nav.navbar-nav
+          li
+            a(href='/') Vizualization
+          li.active
+            a(href='#') Data
+          li
+            a(href='/link') LTP
+          li
+            a(href='/logout') logout
+    br
+    br
+    .container
+      h2 Sub-system Analytics 
+      br
+      .dropdown
+        button#menu1.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+          | Select Device 
+          span.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='menu1')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='/data/sc') Hissi
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='/data/ls1') Latausasema1
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='/data/ls2') Latausasema2
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='/data/mc1') Machine Cell1
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='/data/mc2') Machine Cell2
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='/data/cc') Cell Controller
+      br
+      p
+        strong Info:
+        |  Select a device to get detailed report of machine status and lead time info
+    script.
+      $(document).ready(function(){
+      $(".dropdown-toggle").dropdown();
+      });
