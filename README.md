@@ -1,6 +1,6 @@
 # S4-Fleet-viz
  
-#### Flowtag and Subsystem data processing pipeline for SMEs in Tampere, Finland. http://46.101.113.34:3000 
+#### Flowtag and Subsystem data processing pipeline for SMEs in Tampere, Finland. 
 
 #### Real-time factory visualization web application with WebGL for 3D rendering and chart.js for subsystem analysis.   
 
